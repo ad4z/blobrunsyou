@@ -15,6 +15,11 @@
     font-family: 'ZombieHolocaust';
     src: url(fonts/ZombieHolocaust.ttf);
 }
+
+@font-face {
+    font-family: 'GypsyCurse';
+    src: url(fonts/GypsyCurse.ttf);
+}
             @keyframes blink{
                 50% {
                     opacity: 0
@@ -93,6 +98,33 @@
                              0 0 80px #fff,
                              0 0 120px #fff;
                 transition: font-size 0.5s;
+                margin-left: 10px;
+            }
+
+            .button2 {
+                background: none;
+                color: white;
+                border: none;
+                font-family: GypsyCurse;
+                font-size: 35px;
+                text-shadow: 0 0 10px #fff,
+                             0 0 20px #fff,
+                             0 0 40px #fff,
+                             0 0 80px #fff,
+                             0 0 120px #fff;
+                transition: font-size 0.5s;
+                margin-left: 500px;
+            }
+
+            .button2:hover {
+                cursor: pointer;
+                font-size: 45px;
+                text-shadow: 0 0 20px #fff,
+                             0 0 40px #fff,
+                             0 0 80px #fff,
+                             0 0 120px #fff,
+                             0 0 160px #fff;
+                transition: font-size 0.5s;
             }
 
             .button1:hover {
@@ -122,12 +154,16 @@
             <u>Made By FunnyAlt</u>
         </button>
 
+        <button class="button2" type="button" onclick="location.href='jester.html'">
+            JESTER (click)
+        </button>
+
         <p class="text">
             BLOB RUNS YOU
         </p>
 
         <p class="text1">
-            Hacke is my son
+            Jester is my son
         </p>
     </body>
 </html>
